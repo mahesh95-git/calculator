@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caculator</title>
+<style>
+    *{
+        padding:0px;
+        margin: 0px;
+    }
+    .container{
+ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .button{
+        background-color:beige ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .button {
+        background-color: rgba(0, 0, 0, 0.811);
+        /* width: 200px; */
+        border-radius: 5px;
+        padding:20px;
+    }
+    .button .row .buttonvalue,.a,#result{
+        width: 70px;
+        height:70px;
+        border-radius: 50px;
+        margin:5px;
+        /* background-color: rgb(215, 201, 201); */
+        font-weight: bold;
+        outline: none;
+        border:none;
+        font-size: 20px;
+    }
+.input{
+    /* margin-top: 10px; */
+    width: 325px;
+    height: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.488);
+    color:white;
+    border-radius: 5px;
+    outline: none;
+}
+
+#alldetele{
+    background-color: rgb(165, 167, 220);
+
+}
+.cursor{
+    cursor: pointer;
+}
+.hover:hover{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    box-shadow: -1px -1px 20px  rgb(230, 227, 236);
+  
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+   
+    <div class="button">
+        <form>
+            <input type="text" id="i-o" readonly class="input" placeholder="0">
+        </form>
+    
+        <div class="row">
+         
+            <button id="alldetele" class="buttonvalue cursor hover">C</button>
+            <button value="%" class="buttonvalue cursor hover">%</button>
+            <button class="onedetele a cursor hover" ><-</button>
+                    <button value="/" class="buttonvalue cursor hover">/</button>
+
+        </div>
+        <div class="row">
+            <button value="7" class="buttonvalue cursor hover">7</button>
+            <button value="8" class="buttonvalue cursor hover">8</button>
+            <button value="9" class="buttonvalue cursor hover">9</button>
+            <button value="*" class="buttonvalue cursor hover">*</button>
+
+        </div>
+        <div class="row">
+            <button value="4" class="buttonvalue cursor hover">4</button>
+            <button value="5" class="buttonvalue cursor hover">5</button>
+            <button value="6" class="buttonvalue cursor hover">6</button>
+            <button value="-" class="buttonvalue cursor hover">-</button>
+
+        </div>
+        <div class="row">
+            <button value="1" class="buttonvalue cursor hover">1</button>
+            <button value="2" class="buttonvalue cursor hover">2</button>
+            <button value="3" class="buttonvalue cursor hover">3</button>
+            <button value="+" class="buttonvalue cursor hover">+</button>
+
+        </div>
+        <div class="row">
+            <button value="00" class="buttonvalue cursor hover">00</button>
+            <button value="0" class="buttonvalue cursor hover">0</button>
+            <button value="." class="buttonvalue cursor hover">.</button>
+            <button value="=" id="result" class="blue cursor hover">=</button>
+
+        </div>
+
+    </div>
+</div>
+    <script src="index.js"></script>
+</body>
+
+</html>
